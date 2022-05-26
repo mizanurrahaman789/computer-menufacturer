@@ -13,6 +13,9 @@ import PartsDetails from './Pages/Shared/PartsDetails/PartsDetails';
 import Login from './Pages/Login/Login';
 import SignUp from './Pages/SignUp/SignUp';
 import RequireAuth from './Pages/RequireAuth/RequireAuth';
+import { ToastContainer } from 'react-toastify';
+
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
   return (
@@ -34,6 +37,7 @@ function App() {
         <Route path="/footer" element={<Footer />} />
 
       </Routes>
+      <ToastContainer />
     </div>
   );
 }

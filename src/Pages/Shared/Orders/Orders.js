@@ -2,14 +2,37 @@ import React from 'react';
 import { useAuthState } from 'react-firebase-hooks/auth';
 import { Link } from 'react-router-dom';
 import auth from '../../../firebase.init';
+import { toast } from 'react-toastify';
 
 const Orders = () => {
       const [user, loading, error] = useAuthState(auth);
       const handleorder = event => {
             event.preventDefault();
             const quintity = event.target.quintity.value;
+            const name = event.target.name.value;
+            const addres = event.target.addres.value;
+            const orders = {
+                  quintity,
+                  name,
 
-            console.log(quintity)
+                  email: user.email,
+                  phone: event.target.phone.value,
+                  addres,
+
+            }
+
+            fetch('http://localhost:5000/orders', {
+                  method: 'POST',
+                  headers: {
+                        'content-type': 'application/json'
+                  },
+                  body: JSON.stringify(orders)
+            })
+                  .then(res => res.json())
+                  .then(data => {
+                        console.log(data)
+                  })
+
       }
       return (
             <div class=" bg-base-200 w-5/5">
@@ -27,7 +50,7 @@ const Orders = () => {
 
                                           <div class="form-control">
 
-                                                <input type="text" name="name" disabled value={user?.displayName} class="input input-bordered" />
+                                                <input type="text" name="name" placeholder="your name" class="input input-bordered" />
                                           </div>
                                           <div class="form-control">
 
@@ -39,7 +62,7 @@ const Orders = () => {
                                           </div>
                                           <div class="form-control">
 
-                                                <input type="text" placeholder="your adders" class="input input-bordered" />
+                                                <input type="addres" name="addres" placeholder="your adders" class="input input-bordered" />
                                           </div>
                                           <div class="form-control">
 
