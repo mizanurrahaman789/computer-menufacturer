@@ -1,0 +1,98 @@
+[
+      {
+            "name": "Processor",
+            "img": "https://media.istockphoto.com/photos/computer-education-training-class-picture-id1210738055?b=1&k=20&m=1210738055&s=170667a&w=0&h=obsRXiCdlYUURz0l783K7VrSgK535j2vUkFfvQ1SIjE=",
+            "description": "A processor is an integrated electronic circuit that performs the calculations that run a computer. A processor performs arithmetical, logical, input/output (I/O) and other basic instructions that are passed from an operating system (OS). Most other processes are dependent on the operations of a processor.",
+            "minimumorderquantity": "40",
+            "availablequantity": "1900",
+            "perunitprice": "870"
+      },
+      {
+            "name": "Motherboard",
+            "img": "https://www.pcworld.com/wp-content/uploads/2021/09/motherboard-pic-100894792-orig.jpg?quality=50&strip=all",
+            "description": "A motherboard provides connectivity between the hardware components of a computer, like the processor (CPU), memory (RAM), hard drive, and video card. There are multiple types of motherboards, designed to fit different types and sizes of computers.",
+            "minimumorderquantity": "300",
+            "availablequantity": "3200",
+            "perunitprice": "1000"
+      },
+      {
+            "name": "Computer Cassing",
+            "img": "https://cdn.mos.cms.futurecdn.net/tBDp9WEcFuuCCQiL5HPyoD.jpg",
+            "description": "The Computer Case is the most common used case and is mainly found in the three main sizes. Full tower, mid tower or a mini tower. The larger or full tower has a greater capability to store more hard drives and components and also allows for more room for component maintenance.",
+            "minimumorderquantity": "2000",
+            "availablequantity": "10000",
+            "perunitprice": "280"
+      },
+      {
+            "name": "Power Supply",
+            "img": "https://cdn.mos.cms.futurecdn.net/R56Be7C4w5FFQD8vKz9jpb-1200-80.jpg",
+            "description": "A power supply is a hardware component that supplies power to an electrical device. It receives power from an electrical outlet and converts the current from AC (alternating current) to DC (direct current), which is what the computer requires. ",
+            "minimumorderquantity": "1100",
+            "availablequantity": "4200",
+            "perunitprice": "300"
+      },
+      {
+            "name": "Graphis Card",
+            "img": "https://www.thecoldwire.com/wp-content/uploads/2022/03/Mounting-a-modern-graphic-card-to-gaming-computer.jpeg",
+            "description": "A graphics card is an expansion card which generates a feed of output images to a display device. Frequently, these are advertised as discrete or dedicated graphics cards, emphasizing the distinction between these and integrated graphics.",
+            "minimumorderquantity": "400",
+            "availablequantity": "2600",
+            "perunitprice": "900"
+      },
+      {
+            "name": "Ram",
+            "img": "https://www.pcworld.com/wp-content/uploads/2021/09/corsair-dominator-memory-100884308-orig.jpg?quality=50&strip=all",
+            "description": "Computer random access memory (RAM) is one of the most important components in determining your system’s performance. RAM gives applications a place to store and access data on a short-term basis. It stores the information your computer. ",
+            "minimumorderquantity": "300",
+            "availablequantity": "3400",
+            "perunitprice": "350"
+      },
+      {
+            "name": "Computer ssd",
+            "img": "https://www.pcworld.com/wp-content/uploads/2022/05/best-ssds-hub-100740163-orig.jpg?quality=50&strip=all",
+            "description": "An SSD, or solid-state drive, is a type of storage device used in computers. This non-volatile storage media stores persistent data on solid-state flash memory. SSDs replace traditional hard disk drives (HDDs) in computers and perform the same basic functions as a hard drive. But SSDs are significantly faster in comparison. With an SSD.",
+            "minimumorderquantity": "900",
+            "availablequantity": "4800",
+            "perunitprice": "215"
+      },
+      {
+            "name": "Hard disk",
+            "img": "https://static-01.daraz.com.bd/p/2e7036c1f48263ff5828561f726fffe7.jpg",
+            "description": "hard disk, also called hard disk drive or hard drive, magnetic storage medium for a computer. Hard disks are flat circular plates made of aluminum or glass and coated with a magnetic material. Hard disks for personal computers can store terabytes (trillions of bytes) of information.",
+            "minimumorderquantity": "600",
+            "availablequantity": "3500",
+            "perunitprice": "50"
+      },
+      {
+            "name": "Leanne Graham",
+            "img": "https://www.howtogeek.com/wp-content/uploads/2017/06/gaming-mouse-with-a-blue-glow.jpeg?height=200p&trim=2,2,2,2",
+            "description": "A computer mouse is an input device that is used with a computer. Moving a mouse along a flat surface can move the cursor to different items on the screen. Items can be moved or selected by pushing the mouse buttons (called clicking). Today's mouse have two buttons.",
+            "minimumorderquantity": "1500",
+            "availablequantity": "8000",
+            "perunitprice": "30"
+      },
+      {
+            "name": "Monitor",
+            "img": "https://cdn.mos.cms.futurecdn.net/5Cb9648yap3ShYeqTgYS4W.jpg",
+            "description": "A computer monitor is an output device that displays information in pictorial or text form. A monitor usually comprises a visual display, some circuitry, a casing, and a power supply. The display device in modern monitors is typically a thin film transistor liquid crystal display (TFT-LCD).",
+            "minimumorderquantity": "200",
+            "availablequantity": "800",
+            "perunitprice": "500"
+      },
+      {
+            "name": "Keyboard",
+            "img": "https://i.shgcdn.com/e5911dbd-c7a4-4daa-a774-292d9157456f/-/format/auto/-/preview/3000x3000/-/quality/better/",
+            "description": "A computer keyboard is a peripheral input device modeled after the typewriter keyboard[1] which uses an arrangement of buttons or keys to act as mechanical levers or electronic switches. Replacing early punched cards and paper tape technology",
+            "minimumorderquantity": "1200",
+            "availablequantity": "5000",
+            "perunitprice": "20"
+      },
+      {
+            "name": "Pinter",
+            "img": "https://i0.wp.com/bigtechquestion.com/wp-content/uploads/2021/06/pixma-pro-200-ambient-02_a6d9643bb7de42359bc24e8198635ac7.jpeg?fit=990%2C601&ssl=1",
+            "description": "A printer is an external hardware output device that takes the electronic data stored on a computer or other device and generates a hard copy. For example, if you created a report on your computer, you could print several copies to hand out at a staff meeting.",
+            "minimumordequantity": "150",
+            "availablequantity": "1000",
+            "perunitprice": "250"
+      }
+]

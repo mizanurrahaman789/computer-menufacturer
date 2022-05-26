@@ -1,0 +1,21 @@
+.items-detailss {
+      width: 500px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      border: 2px solid #a7a7a7;
+      margin-top: 30px;
+      margin-bottom: 30px;
+}
+
+.items-detailss img {
+      margin-top: 20px;
+      width: 450px;
+      height: 300;
+      border-radius: 8px;
+      margin-bottom: 5px;
+
+}
+
+.text-area {
+      margin-left: 7px;
+}
