@@ -7,7 +7,7 @@ const PartsDetails = () => {
       const { purchaseId } = useParams();
       const [parts, setParts] = useState({});
       useEffect(() => {
-            const url = `http://localhost:5000/parts/${purchaseId}`
+            const url = `http://localhost:5000/parts/user=${purchaseId}`
             console.log(url)
             fetch(url)
                   .then(res => res.json())
@@ -22,7 +22,7 @@ const PartsDetails = () => {
                               <img className='w-30 ' src={parts.img} alt=""></img>
                         </div>
                         <div className='text-area'>
-                              <h4>ID: {parts.id}</h4>
+                              <h4>ID: {parts._id}</h4>
                               <h1>Name: {parts.name}</h1>
                               <h5>Available quantity: {parts.availablequantity}</h5>
                               <h5>Minimum order quantity: {parts.minimumorderquantity}</h5>
