@@ -21,7 +21,7 @@ const Orders = () => {
 
             }
 
-            fetch('http://localhost:5000/orders', {
+            fetch('https://ancient-dawn-28621.herokuapp.com/orders', {
                   method: 'POST',
                   headers: {
                         'content-type': 'application/json'

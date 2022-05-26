@@ -7,7 +7,7 @@ const PartsDetails = () => {
       const { purchasesId } = useParams();
       const [parts, setParts] = useState('');
       useEffect(() => {
-            const url = `http://localhost:5000/parts/${purchasesId}`
+            const url = `https://ancient-dawn-28621.herokuapp.com/parts/${purchasesId}`
             console.log(url)
             fetch(url)
                   .then(res => res.json())
