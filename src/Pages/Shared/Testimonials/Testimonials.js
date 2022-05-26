@@ -9,22 +9,22 @@ const Testimonials = () => {
             {
                   id: 1,
                   name: 'shakilahmed',
-                  review: 'fdfdff',
-                  location: 'romania',
+                  review: 'computer keyboard is a peripheral input device modeled after the typewriter',
+                  location: 'Romania',
                   img: people1
             },
             {
                   id: 2,
-                  name: 'kolimollah',
-                  review: 'sdfdsfds',
-                  location: 'aljeria',
+                  name: 'Jhoh Walter',
+                  review: 'A monitor usually comprises a visual display',
+                  location: 'America',
                   img: people2
             },
             {
                   id: 3,
                   name: 'hasemmia',
-                  review: 'hjkdghsds',
-                  location: 'malta',
+                  review: 'hard disk, also called hard disk drive or hard drive, magnetic storage medium for a computer',
+                  location: 'Canada',
                   img: people3
             },
       ];
@@ -32,9 +32,9 @@ const Testimonials = () => {
       return (
             <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 p-10'>
                   {
-                        reviews.map(review => <Review
-                              key={review.id}
-                              reviw={review}
+                        reviews.map(reviewsed => <Review
+                              key={reviewsed.id}
+                              reviewsed={reviewsed}
                         ></Review>)
                   }
             </div>

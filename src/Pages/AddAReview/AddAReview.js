@@ -1,9 +1,10 @@
 import React from 'react';
+import Testimonials from '../Shared/Testimonials/Testimonials';
 
 const AddAReview = () => {
       return (
             <div>
-                  <h2>Add A Review</h2>
+                  <Testimonials></Testimonials>
             </div>
       );
 };

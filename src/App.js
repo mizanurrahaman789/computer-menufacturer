@@ -37,7 +37,7 @@ function App() {
           <Route path="review" element={<AddAReview></AddAReview>}></Route>
           <Route path='myprofile' element={<MyProfile></MyProfile>}></Route>
         </Route>
-        <Route path="/purchase/:purchaseId" element={<PartsDetails />} />
+        <Route path="/purchase/:purchasesId" element={<PartsDetails />} />
 
         <Route path="/part" element={<Part />} />
         <Route path="/parts" element={<Parts />} />

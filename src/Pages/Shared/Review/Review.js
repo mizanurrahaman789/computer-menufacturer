@@ -1,27 +1,27 @@
 import React from 'react';
 
-const Review = () => {
+const Review = ({ reviewsed }) => {
+      const { name, review, img, location } = reviewsed;
       return (
-            <div></div>
-            // <div class="card lg:max-w-lg bg-base-100 shadow-xl">
-            //       <div class="card-body">
-            //             <h2 class="card-title">Card title!</h2>
-            //             <p>lore dffdjffgjgjkg;skgsdkld;dgjdf;g;dlkddkgjdgdgdfgdfioreckljverifore
-            //             </p>
-            //             <div class="felx items-center">
-            //                   <div class="avatar">
-            //                         <div class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
-            //                               <img src={review.img} />
-            //                         </div>
-            //                   </div>
-            //                   <div>
-            //                         <h4 className='text-xl'>{review.name}</h4>
-            //                         <p>{Review.location}</p>
-            //                   </div>
 
-            //             </div>
-            //       </div>
-            // </div>
+            <div class="card lg:max-w-lg bg-blue-300 shadow-xl">
+                  <div class="card-body">
+                        <h2 class="card-title text-center">Review</h2>
+                        <p>{reviewsed.review}</p>
+                        <div class="flex justify-center items-center gap-10 my-3 items-center">
+                              <div class="avatar w-50">
+                                    <div class="w-16 rounded-full ring ring-primary ring-offset-base-100 ring-offset-2">
+                                          <img src={reviewsed.img} />
+                                    </div>
+                              </div>
+                              <div className='w-50'>
+                                    <h5 className='text-xl'>Name: {reviewsed.name}</h5>
+                                    <h5>Location: {reviewsed.location}</h5>
+                              </div>
+
+                        </div>
+                  </div>
+            </div>
       );
 };
 

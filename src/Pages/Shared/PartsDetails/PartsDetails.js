@@ -4,10 +4,10 @@ import Orders from '../Orders/Orders';
 import './PartsDetails.css'
 
 const PartsDetails = () => {
-      const { purchaseId } = useParams();
-      const [parts, setParts] = useState({});
+      const { purchasesId } = useParams();
+      const [parts, setParts] = useState('');
       useEffect(() => {
-            const url = `http://localhost:5000/parts/user=${purchaseId}`
+            const url = `http://localhost:5000/parts/${purchasesId}`
             console.log(url)
             fetch(url)
                   .then(res => res.json())
