@@ -6,6 +6,7 @@ import { toast } from 'react-toastify';
 
 const Orders = () => {
       const [user, loading, error] = useAuthState(auth);
+
       const handleorder = event => {
             event.preventDefault();
             const quintity = event.target.quintity.value;
@@ -14,7 +15,6 @@ const Orders = () => {
             const orders = {
                   quintity,
                   name,
-
                   email: user.email,
                   phone: event.target.phone.value,
                   addres,

@@ -4,6 +4,7 @@ import { useSignInWithEmailAndPassword, useSignInWithGoogle } from 'react-fireba
 import auth from '../../firebase.init';
 import Loading from '../Shared/Loading/Loading';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
+import useToken from '../../hooks/useToken';
 
 const Login = () => {
       const [signInWithGoogle, gUser, gloading, gError] = useSignInWithGoogle(auth);
@@ -15,6 +16,9 @@ const Login = () => {
             loading,
             error,
       ] = useSignInWithEmailAndPassword(auth);
+
+
+      const [token] = useToken(user || gUser);
 
       let signInError;
       const navigate = useNavigate();
@@ -28,13 +32,13 @@ const Login = () => {
             signInError = <p className='text-red-500'>{error?.message || gError?.message}</p>
       }
 
-      if (user || gUser) {
+      if (token) {
             navigate(from, { replace: true });
       }
 
-      const onSubmit = data => {
+      const onSubmit = (data) => {
             console.log(data);
-            signInWithEmailAndPassword(data.email, data.password)
+            signInWithEmailAndPassword(data.email, data.password);
       }
       return (
             <div className='flex h-screen justify-center items-center'>

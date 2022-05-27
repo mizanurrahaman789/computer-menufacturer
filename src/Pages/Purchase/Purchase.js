@@ -5,6 +5,7 @@ const Purchase = () => {
       return (
             <div >
                   <PartsDetails></PartsDetails>
+
             </div>
       );
 };
