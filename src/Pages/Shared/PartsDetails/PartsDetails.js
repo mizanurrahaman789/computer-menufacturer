@@ -12,7 +12,7 @@ const PartsDetails = () => {
             fetch(url)
                   .then(res => res.json())
                   .then(data => setPartdetails(data))
-      }, [purchasesId]);
+      }, []);
 
       return (
             <div className='flex bg-slate-200'>
