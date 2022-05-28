@@ -5,28 +5,28 @@ import './PartsDetails.css'
 
 const PartsDetails = () => {
       const { purchasesId } = useParams();
-      const [PartsDetails, setPartsDetails] = useState({});
+      const [partdetails, setPartdetails] = useState({});
       useEffect(() => {
-            const url = `https://ancient-dawn-28621.herokuapp.com/partsdetails/${purchasesId}`;
+            const url = `http://localhost:5000/partdetails/${purchasesId}`;
+            console.log(url)
             fetch(url)
                   .then(res => res.json())
-                  .then(data => setPartsDetails(data))
+                  .then(data => setPartdetails(data))
       }, [purchasesId]);
 
       return (
             <div className='flex bg-slate-200'>
-                  <h1 className='text-center text-5xl'>Parts details</h1>
                   <div className='items-detailss mx-auto'>
                         <div className='text-center'>
-                              <img className='w-30 ' src={PartsDetails.img} alt=""></img>
+                              <img className='w-30 ' src={partdetails.img} alt=""></img>
                         </div>
                         <div className='text-area'>
-                              <h4>ID: {PartsDetails._id}</h4>
-                              <h1>Name: {PartsDetails.name}</h1>
-                              <h5>Available quantity: {PartsDetails.availablequantity}</h5>
-                              <h5>Minimum order quantity: {PartsDetails.minimumorderquantity}</h5>
-                              <h6>Per unit price: {PartsDetails.perunitprice}</h6>
-                              <h6>Description: <small>{PartsDetails.description}</small> </h6>
+                              <h4>ID: {partdetails._id}</h4>
+                              <h1>Name: {partdetails.name}</h1>
+                              <h5>Available quantity: {partdetails.availablequantity}</h5>
+                              <h5>Minimum order quantity: {partdetails.minimumorderquantity}</h5>
+                              <h6>Per unit price: {partdetails.perunitprice}</h6>
+                              <h6>Description: <small>{partdetails.description}</small> </h6>
                         </div>
 
                   </div>

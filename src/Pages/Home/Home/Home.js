@@ -11,9 +11,8 @@ const Home = () => {
             <div className='bg-purple-100'>
                   <Banner></Banner>
                   <Parts></Parts>
-
-                  <MiddleSection></MiddleSection>
                   <BusinessSummary></BusinessSummary>
+                  <MiddleSection></MiddleSection>
                   <Testimonials></Testimonials>
 
                   <Footer></Footer>

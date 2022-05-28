@@ -120,7 +120,7 @@ const SignUp = () => {
                                           </label>
                                     </div>
                                     {signInError}
-                                    <input className='btn w-full max-w-xs text-white' type="submit" value="SignUp" />
+                                    <input className='btn w-full max-w-xs text-white' type="submit" value="Sign Up" />
                               </form>
                               <small className='text-center'>
                                     <p>Already have an account? <Link className='text-primary' to="/login"> Please login</Link></p>
