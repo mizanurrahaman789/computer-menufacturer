@@ -29,6 +29,7 @@ function App() {
       <Navbar></Navbar>
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="home" element={<Home />} />
         <Route path="/purchase" element={<RequireAuth>
           <Purchase />
         </RequireAuth>} />
