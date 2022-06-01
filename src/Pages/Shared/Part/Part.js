@@ -17,19 +17,34 @@ const Part = ({ part }) => {
                         <div class="card-body">
                               <h4 className="card-title">ID: {_id}</h4>
                               <h4 className="card-title">Name: {name}</h4>
-                              {/* <h5 class="card-title">Available quantity: {availablequantity}</h5> */}
+
 
                               <h5>{
                                     availablequantity.length > 0
                                           ? <span>{availablequantity[0]}</span>
-                                          : <span className='text-red-500'>You have to purchase at least 40 products</span>
+                                          : <span className='text-red-500'>You have to purchase at least 42 products</span>
                               }</h5>
 
 
+                              <h5>Available quantity: {availablequantity.length}</h5>
 
-                              <h5 className="card-title">{availablequantity.length}{availablequantity.length > 1 ? 'quantitys' : 'quantity'} Available quantity</h5>
+                              <h5 className="card-title">Available quantity :{availablequantity.length}{availablequantity.length > 1 ? 'quantitys' : 'quantity'} </h5>
 
-                              <h5 className="card-title">Minimum Order quantity: {minimumorderquantity}</h5>
+
+
+
+                              {/* <h5>{
+                                    minimumorderquantity.length > 0
+                                          ? <span>{minimumorderquantity[0]}</span>
+                                          : <span className='text-red-500'>You have to purchase at least 42 products</span>
+                              }</h5> */}
+
+                              {/* <h5 className="card-title">Minimum Order quantity: {availablequantity.length}</h5> */}
+
+                              {/* <h5 className="card-title">Minimum Order quantity :{availablequantity.length}{availablequantity.length > 42 ? 'quantitys' : 'You have to purchase at least 42 products'} </h5> */}
+
+
+
                               <h5 className="card-title">per unit price: {perunitprice}</h5>
                               <h5 >Description: {description}</h5>
                               <div className="card-actions justify-center ">

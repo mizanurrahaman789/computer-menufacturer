@@ -1,20 +1,35 @@
 import React from 'react';
 import { useQuery } from 'react-query';
+import Loading from '../Shared/Loading/Loading'
+import UserRow from './UserRow';
 
 const Users = () => {
-      const { data: users } = useQuery('./users', () => fetch(''), {
+      // const { data: users } = useQuery('./users', () => fetch('http://localhost:5000/user', {
+      //       method: 'GET',
+      //       Headers: {
+      //             authorization: `Bearer${localStorage.getItem('accessToken')}`
+      //       }
+      // })
+
+      //       .then(res => res.json()));
+      // if (users) {
+      //       return <isLoding></isLoding>
+      // }
+
+
+
+      const { data: users, isLoading, refetch } = useQuery('users', () => fetch('http://localhost:5000/user', {
             method: 'GET',
-            Headers: {
+            headers: {
                   authorization: `Bearer${localStorage.getItem('accessToken')}`
             }
-      }
-
-            .then(res => res.json()));
-      if (users) {
-            return <isLoding></isLoding>
+      }).then(res => res.json()));
+      if (isLoading) {
+            return <Loading></Loading>
       }
       return (
             <div>
+                  <h1>hello</h1>
                   <div class="overflow-x-auto">
                         <table class="table w-full">
 
@@ -28,11 +43,11 @@ const Users = () => {
                               <tbody>
 
                                     {
-                                          users.map((a, index) => <tr>
-                                                <th>{a._id}</th>
-                                                <td>{a.name}</td>
-                                                <td>{a.email}</td>
-                                          </tr>)
+                                          users.map(user => <UserRow
+                                                key={user._id}
+                                                user={user}
+                                                refetch={refetch}
+                                          ></UserRow>)
                                     }
                               </tbody>
                         </table>
