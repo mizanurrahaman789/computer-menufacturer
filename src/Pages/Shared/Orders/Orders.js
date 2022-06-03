@@ -15,6 +15,7 @@ const Orders = () => {
             const orders = {
                   quintity,
                   name,
+
                   email: user.email,
                   phone: event.target.phone.value,
                   addres,
